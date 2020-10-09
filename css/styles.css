@@ -191,6 +191,7 @@ footer {
     border-radius: 5px;
     padding: 10px 20px;
     background-color: #ff6699;
+    display: inline-block;
   }
 
   .menu a {
