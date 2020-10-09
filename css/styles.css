@@ -186,4 +186,22 @@ footer {
   .menu {
     display: block;
   }
+
+  .menu__li--booking {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #ff6699;
+  }
+
+  .menu a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    opacity: 0.9;
+    transition: 0.2s all;
+  }
 }
