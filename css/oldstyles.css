@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.nav__logo {
+  /* border: solid 1px fuchsia; */
+  min-width: 100px;
+}
+
+.nav__logo--image {
+  width: 25%;
+}
+
+.menu {
+  /* border: solid 1px green; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.menu,
+li {
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.menu__li--booking {
+  border-radius: 5px;
+  padding: 15px 25px;
+  background-color: #d7a587;
+}
+
+/* main */
+
+.hero-banner--image {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.main__content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.main__content--left {
+  width: 40%;
+  height: 700px;
+  background-color: #d8dcd8;
+  margin: 0 auto;
+}
+
+.main__content--right {
+  width: 40%;
+  height: 700px;
+  background-image: url("../img/skin-by-sakura-main-bg.jpg");
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__content--right--box {
+  width: 90%;
+  height: 500px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__content--locations {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  background-color: hotpink;
+}
