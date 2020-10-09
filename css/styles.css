@@ -192,6 +192,7 @@ footer {
     padding: 10px 20px;
     background-color: #ff6699;
     display: inline-block;
+    text-align: center;
   }
 
   .menu a {
