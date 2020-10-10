@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -100,12 +100,12 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 700pz;
+  height: 700px;
 }
 
 .main__content--intro {
   width: 40%;
-  height: 600px;
+  height: 700px;
   /* background-image: url("../img/skin-by-sakura-main-bg.jpg"); */
   background-color: #d8dcd8;
   display: flex;
@@ -131,13 +131,18 @@ main {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.875rem;
+  font-weight: 300;
 }
 
 .reception-img {
   display: inline-block;
   max-width: 32%;
   padding: 5px;
+}
+
+.intro__button {
+  margin-top: 30px;
 }
 
 .intro__button--cta {
@@ -150,7 +155,7 @@ h1 {
 
 .main__content--philosophy {
   width: 40%;
-  height: 600px;
+  height: 700px;
   background-color: #d7a587;
   border: solid 1px aqua;
   padding: 2%;
@@ -260,5 +265,14 @@ footer {
 
   .nav__logo--image {
     min-width: 100px;
+  }
+
+  .menu,
+  .hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-menu:checked ~ nav {
+    display: block;
   }
 }

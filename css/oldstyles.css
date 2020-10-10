@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -14,6 +14,7 @@ header {
   align-items: center;
   padding: 15px;
   background-color: #ffffff;
+  min-height: 100px; /* hamburger css */
 }
 
 .nav__logo {
@@ -49,54 +50,229 @@ li {
   background-color: #d7a587;
 }
 
-/* main */
-
-.hero-banner--image {
-  width: 100%;
+.menu a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+  text-decoration: none;
 }
+
+.menu a:hover {
+  opacity: 0.8;
+  transition: 0.2s all;
+}
+
+.menu,
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-label {
+  color: #d7a587;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+.hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/* main */
 
 main {
   width: 100%;
 }
 
+.hero-banner--image {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
 .main__content {
   width: 100%;
+  border: solid 1px fuchsia;
+}
+
+.main__content__clinic__intro {
+  width: 100%;
+  border: solid 1px green;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: space-around;
   align-items: center;
+  height: 700px;
 }
 
-.main__content--left {
+.main__content--intro {
   width: 40%;
   height: 700px;
+  /* background-image: url("../img/skin-by-sakura-main-bg.jpg"); */
   background-color: #d8dcd8;
-  margin: 0 auto;
-}
-
-.main__content--right {
-  width: 40%;
-  height: 700px;
-  background-image: url("../img/skin-by-sakura-main-bg.jpg");
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid 1px brown;
 }
 
-.main__content--right--box {
+.main__content--intro--info {
   width: 90%;
   height: 500px;
   background-color: #ffffff;
-  margin: 0 auto;
-  align-items: center;
+  padding: 3%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.intro__text-images {
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+}
+
+.reception-img {
+  display: inline-block;
+  max-width: 32%;
+  padding: 5px;
+}
+
+.intro__button {
+  margin-top: 30px;
+}
+
+.intro__button--cta {
+  background-color: #ffffff;
+  border: solid 2px #d7a587;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin-top: 15px;
+}
+
+.main__content--philosophy {
+  width: 40%;
+  height: 700px;
+  background-color: #d7a587;
+  border: solid 1px aqua;
+  padding: 2%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.main__content--philosophy--heading {
+  width: 100%;
+}
+
+.main__content--philosophy--image {
+  width: 100%;
+}
+
+.main__content--philosophy--image--img {
+  max-width: 90%;
 }
 
 .main__content--locations {
   width: 100%;
+  background-color: fuchsia;
   padding: 2%;
-  text-align: center;
-  background-color: hotpink;
+  height: 700px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__info {
+  width: 45%;
+  border: solid 1px red;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer__social-media {
+  width: 45%;
+  border: solid 1px purple;
+  padding: 10px;
+  text-align: right;
+}
+
+.fa-instagram {
+  font-size: 2rem;
+  color: #d7a587;
+}
+
+.fa-instagram-square {
+  font-size: 2rem;
+  color: #d7a587;
+}
+
+.fa-facebook-square {
+  font-size: 2rem;
+  color: #d7a587;
+}
+
+/* media queries */
+
+@media (min-width: 600px) {
+  .menu {
+    display: flex;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  .nav__logo--image {
+    min-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+
+  .menu__li--booking {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #d7a587;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .menu a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    opacity: 0.8;
+    transition: 0.2s all;
+  }
+
+  .nav__logo--image {
+    min-width: 100px;
+  }
+
+  .menu,
+  .hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-menu:checked ~ nav {
+    display: block;
+  }
 }
