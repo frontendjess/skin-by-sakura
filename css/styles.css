@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* header */
 
 header {
@@ -80,13 +86,19 @@ li {
 
 /* main */
 
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+}
+
 main {
   width: 100%;
 }
 
 .hero-banner--image {
   width: 100%;
-  margin-bottom: -5px;
+  /* margin-bottom: -5px; */
 }
 
 .main__content {
@@ -94,86 +106,24 @@ main {
   border: solid 1px fuchsia;
 }
 
-.main__content__clinic__intro {
+.main__content__intro {
   width: 100%;
   border: solid 1px green;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 700px;
-}
-
-.main__content--intro {
-  width: 40%;
-  height: 700px;
-  /* background-image: url("../img/skin-by-sakura-main-bg.jpg"); */
-  background-color: #d8dcd8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px brown;
-}
-
-.main__content--intro--info {
-  width: 90%;
-  height: 500px;
-  background-color: #ffffff;
-  padding: 3%;
-  border-radius: 20px;
   text-align: center;
 }
 
-.intro__text-images {
-  text-align: center;
-  margin-top: 15px;
+.main__content__intro--clinics {
   width: 100%;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.875rem;
-  font-weight: 300;
-}
-
-.reception-img {
-  display: inline-block;
-  max-width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: solid 2px orange;
   padding: 5px;
+  justify-content: space-between;
 }
 
-.intro__button {
-  margin-top: 30px;
-}
-
-.intro__button--cta {
-  background-color: #ffffff;
-  border: solid 2px #d7a587;
-  border-radius: 20px;
-  padding: 20px 50px;
-  margin-top: 15px;
-}
-
-.main__content--philosophy {
-  width: 40%;
-  height: 700px;
-  background-color: #d7a587;
-  border: solid 1px aqua;
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main__content--philosophy--heading {
-  width: 100%;
-}
-
-.main__content--philosophy--image {
-  width: 100%;
-}
-
-.main__content--philosophy--image--img {
-  max-width: 90%;
+.clinics--images {
+  flex: 0 1 20%;
 }
 
 .main__content--locations {
