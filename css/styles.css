@@ -102,34 +102,28 @@ main {
 }
 
 .main__content {
+  background-color: #d7a587;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main__content__intro--heading {
   width: 100%;
   border: solid 1px fuchsia;
 }
 
-.main__content__intro {
-  width: 100%;
-  border: solid 1px green;
-  text-align: center;
-}
-
 .main__content__intro--clinics {
+  border: solid 1px aqua;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  border: solid 2px orange;
-  padding: 5px;
-  justify-content: space-between;
-}
-
-.clinics--images {
-  flex: 0 1 20%;
 }
 
 .main__content--locations {
   width: 100%;
-  background-color: fuchsia;
-  padding: 2%;
+  background-color: #ff6699;
+
   height: 700px;
 }
 
