@@ -110,6 +110,10 @@ main {
   width: 100%;
 }
 
+.main__content {
+  width: 100%;
+}
+
 .main__content__intro--heading {
   width: 100%;
   border: solid 1px fuchsia;
